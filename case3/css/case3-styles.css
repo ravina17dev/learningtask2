@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: rgb(155, 238, 155);
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #488535;
+    color: #fff;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.logo {
+    width: 310px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    flex: 1;
+}
+
+.main-navigation {
+    background-color: rgb(81, 255, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+.main-navigation a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+.gallery {
+    width: 320px;
+}
+
+.image-box {
+    margin-bottom: 15px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+}
+
+.description {
+    flex: 1;
+}
+
+.text-box {
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.spacer {
+    height: 80px;
+}
+.contact {
+    padding: 30px;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #1f4d1f;
+}
+
+.contact-box {
+    width: 60%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid #488535;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h2 {
+    color: #488535;
+}
+
+.contact-item h3 {
+    color: #2e6b2e;
+    margin-bottom: 5px;
+}
