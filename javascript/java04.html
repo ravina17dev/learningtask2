@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>.:javascript D4 :.</title>
+    <script>
+        function getName() {
+            let name = document.getElementById("txtName").value;
+            
+            if (name === "brenjun") {
+                document.getElementById("name").innerHTML = name + ", you have access!";
+            } else {
+                document.getElementById("name").innerHTML = name + ", you DO NOT have access!";
+            }
+        } // Added missing closing brace for the function
+    </script>
+</head>
+<body>
+
+    <label>What is my name</label><br>
+    <input type="text" id="txtName"><br>
+    
+    <label>what is my password</label><br>
+    <input type="password" id="passPassword"><br>
+    
+    <button onclick="getName()">Click to get my name</button>
+    <div id="name">No access</div>
+
+</body>
+</html>
