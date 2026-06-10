@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+
+<script>
+function calculate() {
+
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var operation = document.getElementById("op").value;
+
+    var answer;
+
+    if (operation == "a") {
+        answer = num1 + num2;
+    }
+    else if (operation == "b") {
+        answer = num1 - num2;
+    }
+    else if (operation == "c") {
+        answer = num1 * num2;
+    }
+    else if (operation == "d") {
+        answer = num1 / num2;
+    }
+    else {
+        alert("Invalid operation!");
+        return;
+    }
+
+    alert("Answer: " + answer);
+}
+</script>
+
+</head>
+<body>
+
+    Number 1: <input type="text" id="num1"><br><br>
+    Number 2: <input type="text" id="num2"><br><br>
+
+    Operation (a-add, b-sub, c-mul, d-div): <input type="text" id="op"><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+</body>
+</html>
