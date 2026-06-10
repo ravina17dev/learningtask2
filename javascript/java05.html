@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Page 05</title>
+
+    <script>
+        function getName() {
+            let name = document.getElementById("txtName").value;
+            let password = document.getElementById("passPassword").value;
+
+            if (name === "richqt" && password === "cute123") {
+                window.location = "index.html";
+            } else {
+                document.getElementById("alert").innerHTML =
+                    name + ", you do not have access!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label>What is my name?</label><br>
+    <input type="text" id="txtName"><br>
+
+    <label>What is my password?</label><br>
+    <input type="password" id="passPassword"><br><br>
+
+    <button onclick="return getName()">
+        Click to get my name
+    </button>
+
+    <div id="alert"></div>
+</body>
+</html>
