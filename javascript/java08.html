@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.: Javascript 08 :.</title>
+
+<script>
+function areaSqua(){
+    let side = document.getElementById("sideOfSquare");
+
+    if (side.value != ""){
+        let area = parseFloat(side.value) * parseFloat(side.value);
+        alert("Area of square is " + area);
+    } else {
+        alert("Side of square is empty!");
+        side.focus();
+    }
+}
+
+function areaRec(){
+    let length = document.getElementById("rectLength");
+    let width = document.getElementById("rectWidth");
+
+    if (length.value != "" && width.value != ""){
+        let area = parseFloat(length.value) * parseFloat(width.value);
+        alert("Area of rectangle is " + area);
+    } else {
+        alert("Fill in both length and width!");
+    }
+}
+
+function areaTri(){
+    let base = document.getElementById("triBase");
+    let height = document.getElementById("triHeight");
+
+    if (base.value != "" && height.value != ""){
+        let area = 0.5 * parseFloat(base.value) * parseFloat(height.value);
+        alert("Area of triangle is " + area);
+    } else {
+        alert("Fill in base and height!");
+    }
+}
+
+function areaCir(){
+    let radius = document.getElementById("radius");
+
+    if (radius.value != ""){
+        let area = 3.1416 * parseFloat(radius.value) * parseFloat(radius.value);
+        alert("Area of circle is " + area);
+    } else {
+        alert("Radius is empty!");
+    }
+}
+
+function areaTrap(){
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let h = document.getElementById("h");
+
+    if (a.value != "" && b.value != "" && h.value != ""){
+        let area = 0.5 * (parseFloat(a.value) + parseFloat(b.value)) * parseFloat(h.value);
+        alert("Area of trapezoid is " + area);
+    } else {
+        alert("Fill all trapezoid values!");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<h>!!LENGHTH CALCULATOR!!</h1>
+
+<p>Click a shape to calculate its area:</p>
+
+<h3>Square</h3>
+<input id="sideOfSquare" placeholder="Side">
+<button onclick="areaSqua()">Compute</button>
+
+<h3>Rectangle</h3>
+<input id="rectLength" placeholder="Length">
+<input id="rectWidth" placeholder="Width">
+<button onclick="areaRec()">Compute</button>
+
+<h3>Triangle</h3>
+<input id="triBase" placeholder="Base">
+<input id="triHeight" placeholder="Height">
+<button onclick="areaTri()">Compute</button>
+
+<h3>Circle</h3>
+<input id="radius" placeholder="Radius">
+<button onclick="areaCir()">Compute</button>
+
+<h3>Trapezoid</h3>
+<input id="a" placeholder="Base A">
+<input id="b" placeholder="Base B">
+<input id="h" placeholder="Height">
+<button onclick="areaTrap()">Compute</button>
+
+</body>
+</html>
