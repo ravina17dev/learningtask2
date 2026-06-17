@@ -1,0 +1,13 @@
+body {
+    background-color: burlywood;
+}
+.wrapper {
+    width: 80%;
+    border: 1px #000 solid;
+    margin: 0 auto;
+    min-height: 100px;
+}
+.header {
+    background-image: url(../imgs/bck.png);
+    min-height: 100px;
+}
